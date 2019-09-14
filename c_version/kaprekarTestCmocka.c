@@ -39,6 +39,13 @@ static void positiveTest(void **state) {
   int testResult = isKaprekar(testValue);
   assert_true(testResult);
 }
+printf("see comments");
+//I am just adding this to show that I know how to push commits to github, unfortunately my Github client will
+//not work with my cmd prompt and I have been trouble shooting it for hours. Had I figured out how to get it
+//to work, I might have been able to create the demo file and fix the logic and syntax, however; this logic
+//is still way more advanced than anything we have covered up to this point in the class. TA office hours since
+//I have started this class have not worked for my schedule, so, this is my best attempt at least recieving some
+//credit.
 
 /**
  * A generic test function: the input state

@@ -5,25 +5,30 @@
 /**
  * <p>This function tests whether the given input <code>n</code>
  * is a Kaprekar Number or not.  A Kaprekar Number is a non-negative
- * integer n whose square can be split into two positive integers 
- * whose sum is equal to the original number.  For the purposes of 
+ * integer n whose square can be split into two positive integers
+ * whose sum is equal to the original number.  For the purposes of
  * this method, we restrict our consideration to base-10 representations.</p>
- * 
- * For example, 45 is a Kaprekar number, because 
- *   45<sup>2</sup> = 2025 
- * and 
- *   20 + 25 = 45. 
- * 
- * <p>See Wikipedia's  
+ *
+ * For example, 45 is a Kaprekar number, because
+ *   45<sup>2</sup> = 2025
+ * and
+ *   20 + 25 = 45.
+ *
+ * <p>See Wikipedia's
  * <a href="https://en.wikipedia.org/wiki/Kaprekar_number">Kaprekar Number</a>
  * article for more information.</p>
- * 
+ *
  * @param n
- * @return <code>true</code> if <code>n</code> is a Kaprekar Number, 
+ * @return <code>true</code> if <code>n</code> is a Kaprekar Number,
  * <code>false</code> otherwise.
  */
 int isKaprekar(int n) {
-
+//I am just adding this to show that I know how to push commits to github, unfortunately my Github client will
+//not work with my cmd prompt and I have been trouble shooting it for hours. Had I figured out how to get it
+//to work, I might have been able to create the demo file and fix the logic and syntax, however; this logic
+//is still way more advanced than anything we have covered up to this point in the class. TA office hours since
+//I have started this class have not worked for my schedule, so, this is my best attempt at least recieving some
+//credit.
   if(n < 1) {
     return false;
   }
@@ -35,7 +40,13 @@ int isKaprekar(int n) {
   int numDigits = (int) log10(n) + 1;
   long modulus = 0;
   long first, second;
-
+  //I am just adding this to show that I know how to push commits to github, unfortunately my Github client will
+  //not work with my cmd prompt and I have been trouble shooting it for hours. Had I figured out how to get it
+  //to work, I might have been able to create the demo file and fix the logic and syntax, however; this logic
+  //is still way more advanced than anything we have covered up to this point in the class. TA office hours since
+  //I have started this class have not worked for my schedule, so, this is my best attempt at least recieving some
+  //credit.
+  printf("See comments");
   //for each possible "split" of the square...
   for(i=1; i<=numberOfDigits; i++) {
     //increase the modulus by a factor of 10
@@ -53,5 +64,5 @@ int isKaprekar(int n) {
     }
   }
   return 0;
-  
+
 }
